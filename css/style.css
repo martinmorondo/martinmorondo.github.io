@@ -19,7 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/programacion.jpg") top right no-repeat;
+  background: #040404 url("../img/programacion-2.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -64,6 +64,8 @@ h6 {
   align-items: center;
   z-index: 997;
   overflow-y: auto;
+   margin-top: -40px; 
+  margin-left: -110px;
 }
 
 #header * {
@@ -95,7 +97,7 @@ h6 {
 #header h2 span {
   color: #fff;
   border-bottom: 2px solid #18d26e;
-  padding-bottom: 6px;
+  padding-bottom: 0.2px;
 }
 
 #header img {
