@@ -34,6 +34,17 @@ body::before {
   }
 }
 
+@media (max-width: 992px) {
+
+body::before {
+    content: "";
+    background: url("../img/programacion.jpg");
+    background-size: cover;
+    background-position: 70%;
+    background-repeat: no-repeat;
+  }
+}
+
 a {
   color: #18d26e;
   text-decoration: none;
@@ -64,7 +75,7 @@ h6 {
   align-items: center;
   z-index: 997;
   overflow-y: auto;
-   margin-top: -20px; 
+  margin-top: -20px; 
   margin-left: -110px;
 }
 
@@ -111,17 +122,17 @@ h6 {
 }
 
 #header .social-links a {
-  font-size: 16px;
+  font-size: 26px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
   line-height: 1;
-  margin-right: 8px;
+  margin-right: 25px;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 
 #header .social-links a:hover {
@@ -130,32 +141,42 @@ h6 {
 
 @media (max-width: 992px) {
   #header h1 {
-    font-size: 36px;
+    color: black;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
   }
 
   #header h2 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
   }
 
   #header .social-links {
-    margin-top: 15px;
+    margin-top: 12px;
   }
 
   #header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    margin-left: 5.7rem;
+  }
+
+  .w-50 {
+    width: 99% !important;
   }
 }
 
 /* Header Top */
 #header.header-top {
-  height: 80px;
-  position: fixed;
-  left: 0;
+  margin-top: 0.8px;
+  height: 65px;
+  /* position: fixed; */
+  /* left: 0;
   top: 0;
-  right: 0;
+  right: 0; */
   background: rgba(0, 0, 0, 0.9);
 }
 
@@ -196,7 +217,7 @@ h6 {
 */
 .navbar {
   padding: 0;
-  margin-top: 35px;
+  margin-top: 0.8rem;
 }
 
 .navbar ul {
@@ -222,7 +243,7 @@ h6 {
   justify-content: space-between;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
   white-space: nowrap;
@@ -434,6 +455,13 @@ section .container {
 
 .about-me .content p:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 998px) {
+   .img-fluid {
+    visibility: hidden;
+    display: none;
+   }
 }
 
 /*--------------------------------------------------------------
@@ -692,7 +720,7 @@ section .container {
 .services .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
-  padding: 80px 20px;
+  padding: 20px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
 }
 
@@ -1195,3 +1223,4 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
