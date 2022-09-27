@@ -38,7 +38,7 @@ body::before {
 
 body::before {
     content: "";
-    background: url("img/programacion.jpg");
+    background: url("../img/programacion.jpg");
     background-size: cover;
     background-position: 70%;
     background-repeat: no-repeat;
