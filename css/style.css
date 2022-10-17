@@ -182,11 +182,15 @@ h6 {
 
 @media (max-width: 768px) {
   #header.header-top {
-    height: 60px;
+    height: 40px;
   }
 
   #header.header-top h1 {
     font-size: 26px;
+  }
+  
+   #header h1 a {
+    display: none;
   }
 }
 
