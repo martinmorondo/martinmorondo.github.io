@@ -72,6 +72,10 @@ h6 {
   transition: ease-in-out 0.3s;
 }
 
+#header .container {
+  margin: 0px auto;
+}
+
 #header h1 {
   font-size: 48px;
   margin: 0;
@@ -129,15 +133,22 @@ h6 {
 }
 
 @media (max-width: 992px) {
-  #header h1 {
-    font-size: 36px;
+
+  body::before {
+    background: #040404 url("../img/background.png") top center no-repeat;
+  }
+
+  #header {
+    margin: 0px auto;
   }
 
   #header h2 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.8rem;
+    line-height: 40px;
     color: white;
     font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 0px 8px white;
   }
 
   #header .social-links {
@@ -148,6 +159,12 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+
+  #header .container .social-links {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -206,8 +223,9 @@ h6 {
 }
 
 .nav-link {
-  color: violet;
+  color: rgb(38, 239, 246);
   font-weight: bold;
+  text-shadow: 0px 0px 8px black;
 }
 
 .navbar ul {
@@ -252,10 +270,10 @@ h6 {
   content: "";
   position: absolute;
   width: 0;
-  height: 2px;
+  height: 5px;
   bottom: -4px;
   left: 0;
-  background-color: #18d26e;
+  background-color: #ae1919;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -265,7 +283,7 @@ h6 {
 .navbar li:hover>a:before,
 .navbar .active:before {
   visibility: visible;
-  width: 25px;
+  width: 40px;
 }
 
 .navbar a:hover,
